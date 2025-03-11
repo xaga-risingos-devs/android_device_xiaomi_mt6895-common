@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl:64 \
     android.hardware.audio.effect@7.0-impl:64 \
     android.hardware.soundtrigger@2.3-impl:64 \
-    android.hardware.audio.service:64
+    android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
     audio.primary.default:64 \
