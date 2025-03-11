@@ -47,30 +47,30 @@ PRODUCT_PACKAGES += \
 # Audio
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.1-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    android.hardware.audio.service
+    android.hardware.audio@7.1-impl:64 \
+    android.hardware.audio.effect@7.0-impl:64 \
+    android.hardware.soundtrigger@2.3-impl:64 \
+    android.hardware.audio.service:64
 
 PRODUCT_PACKAGES += \
-    audio.primary.default \
-    audio.bluetooth.default \
-    audio.usb.default \
-    android.hardware.bluetooth.audio-impl
+    audio.primary.default:64 \
+    audio.bluetooth.default:64 \
+    audio.usb.default:64 \
+    android.hardware.bluetooth.audio-impl:64
 
 PRODUCT_PACKAGES += \
     MtkInCallService
 
 PRODUCT_PACKAGES += \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libhapticgenerator \
-    libldnhncr \
-    libreverbwrapper \
-    libvisualizer
+    libaudiopreprocessing:64 \
+    libbundlewrapper:64 \
+    libdownmix:64 \
+    libdynproc:64 \
+    libeffectproxy:64 \
+    libhapticgenerator:64 \
+    libldnhncr:64 \
+    libreverbwrapper:64 \
+    libvisualizer:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
