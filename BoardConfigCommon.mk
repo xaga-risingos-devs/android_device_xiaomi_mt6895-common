@@ -79,7 +79,8 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_udfps.xml
 endif
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
-    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
+    device/xiaomi/mt6895-common/vintf/device_framework_compatibility_matrix.xml
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64

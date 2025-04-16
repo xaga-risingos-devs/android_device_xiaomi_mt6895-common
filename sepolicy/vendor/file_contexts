@@ -137,6 +137,12 @@
 # Graphics
 /dev/mi_display/disp_feature                                              u:object_r:vendor_displayfeature_device:s0
 
+# Data files
+/data/vendor/dolby(/.*)? u:object_r:vendor_data_file:s0
+
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service u:object_r:hal_dms_default_exec:s0
+
 # Ir
 /dev/ir_spi                                                               u:object_r:lirc_device:s0
 

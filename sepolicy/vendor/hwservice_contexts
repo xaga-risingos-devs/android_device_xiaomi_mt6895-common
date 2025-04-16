@@ -1,3 +1,6 @@
+# Dolby
+vendor.dolby.hardware.dms::IDms u:object_r:hal_dms_hwservice:s0
+
 # Fido
 vendor.xiaomi.hardware.mfidoca::IFidoService                            u:object_r:hal_mfidoca_hwservice:s0
 

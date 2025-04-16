@@ -22,6 +22,9 @@ vendor.usbsph.ul.pcm.dump=0
 vendor.usbsph.srcaws.pcm.dump=0
 vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
+vendor.audio.feature.hfp.enable=true
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=0
 
 # Bluetooth
 ro.vendor.bt.platform=6895
@@ -84,6 +87,10 @@ ro.vendor.smvr.p2batch.vga=32
 ro.vendor.smvr.p2batch.hd=16
 ro.vendor.smvr.p2batch.fhd=8
 persist.vendor.sys.mtkaal.function=0
+
+# Dolby Atmos
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 
 # DRM
 ro.netflix.bsp_rev=MTK6895-35027-1
