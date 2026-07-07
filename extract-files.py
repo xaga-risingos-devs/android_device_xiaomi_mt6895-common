@@ -90,6 +90,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/libteei_daemon_vfs.so', 'system_ext/lib64/libarmnn_ndk.mtk.so'): blob_fixup()
         .add_needed('liblog.so'),
+    'system_ext/lib64/libapuwareapusys_v2.mtk.so': blob_fixup()
+        .replace_needed('vendor.mediatek.hardware.apuware.apusys-V3-ndk.so', 'vendor.mediatek.hardware.apuware.apusys-V5-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
