@@ -88,7 +88,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcutils.so'),
     ('vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
-    'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
+    ('vendor/lib64/libteei_daemon_vfs.so', 'system_ext/lib64/libarmnn_ndk.mtk.so'): blob_fixup()
         .add_needed('liblog.so'),
 }  # fmt: skip
 
