@@ -90,6 +90,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
         .add_needed('liblog.so'),
+    ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
