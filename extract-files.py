@@ -100,6 +100,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcutils.so'),
     'system_ext/lib64/libsink-mtk.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
+    ('system_ext/lib64/libaudiotoolkit.so', 'system_ext/lib64/libem_audio_jni.so'): blob_fixup()
+        .add_needed('libaudiobase.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

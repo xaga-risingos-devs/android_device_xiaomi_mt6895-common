@@ -570,9 +570,9 @@ vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Radio (Engineer Mode) - from plato V14.0.7.0.ULQMIXM
 system_ext/app/EngineerMode/EngineerMode.apk|e34588606d108ea5aa154f55460fd46c8bbd677c
-system_ext/lib64/libaudiotoolkit.so|07acc8088fbb727f29c88c8cb23ec3902e1f1eb1
+system_ext/lib64/libaudiotoolkit.so|07acc8088fbb727f29c88c8cb23ec3902e1f1eb1|f655ad7f1d8e945a8567de64befcdcfc6c1c7c53
 system_ext/lib64/libem_aoltest_jni.so|66b7aaf4eac090a780400dcc35e8b1acb5d10ebe
-system_ext/lib64/libem_audio_jni.so|f8b031d3662f288772075faf32ae020ab7390b27
+system_ext/lib64/libem_audio_jni.so|f8b031d3662f288772075faf32ae020ab7390b27|3afc33970c587e6f0e00f60d5f8bfe0943f728dd
 system_ext/lib64/libem_bleoffload_jni.so|06f572dfe125f765b1bed18baf4de2c5b9d11a26
 system_ext/lib64/libem_support_jni.so|b7d3b3bfa079b6bca9acb0a7c054a7a234d92818
 system_ext/lib64/libem_wifi_jni.so|c0d02ba0d755ff8c33dcbfe79c4107dcf91df398
