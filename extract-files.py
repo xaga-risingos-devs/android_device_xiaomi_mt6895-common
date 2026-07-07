@@ -92,6 +92,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('liblog.so'),
     ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
         .replace_needed('libformatter.so', 'libformatter-v34.so'),
+    'system_ext/lib64/libapuwareapusys_v2.mtk.so': blob_fixup()
+        .replace_needed('vendor.mediatek.hardware.apuware.apusys-V3-ndk.so', 'vendor.mediatek.hardware.apuware.apusys-V5-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
