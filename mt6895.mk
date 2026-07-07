@@ -273,7 +273,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     libmtkperf_client_vendor \
-    libmtkperf_client
+    libmtkperf_client \
+    libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -305,6 +306,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/pixel \
     hardware/google/interfaces \
+    hardware/google/pixel/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
     hardware/mediatek/libaedv \
