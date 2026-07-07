@@ -94,6 +94,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libformatter.so', 'libformatter-v34.so'),
     'system_ext/lib64/libapuwareapusys_v2.mtk.so': blob_fixup()
         .replace_needed('vendor.mediatek.hardware.apuware.apusys-V3-ndk.so', 'vendor.mediatek.hardware.apuware.apusys-V5-ndk.so'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl-mtk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
