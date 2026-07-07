@@ -102,6 +102,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libaudioclient_shim.so'),
     ('system_ext/lib64/libaudiotoolkit.so', 'system_ext/lib64/libem_audio_jni.so'): blob_fixup()
         .add_needed('libaudiobase.so'),
+    'system_ext/lib64/libarmnn_ndk.mtk.so': blob_fixup()
+        .add_needed('liblog.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
