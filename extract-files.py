@@ -98,6 +98,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libmnl.so', 'libmnl-mtk.so'),
     'vendor/lib64/mt6895/libmnl-mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
