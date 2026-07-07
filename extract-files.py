@@ -96,6 +96,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('vendor.mediatek.hardware.apuware.apusys-V3-ndk.so', 'vendor.mediatek.hardware.apuware.apusys-V5-ndk.so'),
     'vendor/bin/mnld': blob_fixup()
         .replace_needed('libmnl.so', 'libmnl-mtk.so'),
+    'vendor/lib64/mt6895/libmnl-mtk.so': blob_fixup()
+        .add_needed('libcutils.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
