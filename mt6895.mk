@@ -285,6 +285,9 @@ $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libp
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+PRODUCT_SELINUX_TREBLE_LABELING_TRACKING_LIST_FILE := \
+    device/xiaomi/mt6895-common/sepolicy/tracking_list.yaml
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
