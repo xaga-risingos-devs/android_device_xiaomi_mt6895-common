@@ -1,0 +1,7 @@
+type mt6895performanced, domain, coredomain;
+type mt6895performanced_exec, exec_type, file_type, system_file_type;
+init_daemon_domain(mt6895performanced)
+
+# Write to CPU online files
+allow mt6895performanced sysfs_devices_system_cpu:dir search;
+allow mt6895performanced sysfs_devices_system_cpu:file { read open getattr write };

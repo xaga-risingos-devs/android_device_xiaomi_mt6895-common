@@ -1,0 +1,10 @@
+cc_binary {
+    name: "mt6895performanced",
+    srcs: ["mt6895performanced.cpp"],
+    vendor: false,
+    cflags: ["-Wall", "-Werror"],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+    ],
+}

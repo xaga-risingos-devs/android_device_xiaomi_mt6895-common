@@ -1,0 +1,2 @@
+# Performance mode
+persist.sys.mt6895_performance_mode      u:object_r:system_prop:s0
