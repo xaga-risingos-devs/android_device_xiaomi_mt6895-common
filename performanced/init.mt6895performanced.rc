@@ -1,0 +1,9 @@
+service mt6895performanced /system/bin/mt6895performanced
+    class main
+    user root
+    group root
+    seclabel u:r:mt6895performanced:s0
+
+on property:sys.boot_completed=1
+    start mt6895performanced
+

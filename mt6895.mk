@@ -373,5 +373,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
+# Performance mode
+PRODUCT_PACKAGES += mt6895performanced
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mt6895-common/performanced/init.mt6895performanced.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.mt6895performanced.rc
+
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6895-common/mt6895-common-vendor.mk)
