@@ -111,7 +111,7 @@ void run_daemon() {
 
 int main() {
     LOGI("Starting mt6895performanced");
-
+    sleep(5);
     // Initial apply
     std::string init_mode = get_property(PROP_PERF_MODE);
     bool init_perf = (init_mode == ON_VALUE);
