@@ -4,6 +4,6 @@ service mt6895performanced /system/bin/mt6895performanced
     group root
     seclabel u:r:mt6895performanced:s0
 
-on property:sys.boot_completed=1
+on property:init.svc.vendor.thermal-hal=running
     start mt6895performanced
 
